@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 INSTALLPATH=/usr/local/bin
 BINARY=cpubgline
