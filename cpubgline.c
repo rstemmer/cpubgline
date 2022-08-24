@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
     // Collect some basic information
     unsigned int numofcores;
     pid_t parentpid;
-    numofcores = get_nprocs_conf();
+    numofcores = get_nprocs();
     parentpid  = getppid();
 
     // Generate tmp-file name
