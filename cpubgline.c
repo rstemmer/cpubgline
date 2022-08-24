@@ -282,7 +282,10 @@ int GetCPUStats(CPUSTAT *cpustats, unsigned int numofcores)
     free(line);
     fclose(fp);
     if(cpunr != numofcores)
+    {
+        fprintf(stderr, "%i CPUs expected. Only information about %i CPUs found!\n", numofcores, cpunr);
         return RETVAL_UNEXPECTEDCPUCOUNT;
+    }
     return RETVAL_OK;
 }
 
