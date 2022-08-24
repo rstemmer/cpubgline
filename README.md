@@ -1,9 +1,19 @@
+<h3 align="center">cpubgline</h3>
 
-# cpubgline
+<div align="center">
+  Status: 🟢  Active - License: GPL v3
+</div>
+
+---
+
+<p align="center">cpubgline shows the load of the CPU cores as Unicode^ bar graph in a single line
+    <br/>
+</p>
+
 
 This tool prints a bar graph of the usage of each virtual CPU in a single line using Unicode block characters.
 
-This my look line `▁▂▅▁▆█  ▂▃ ▁` on an Intel hexacore with hyperthreading.
+This line may look like `▁▂▅▁▆█  ▂▃ ▁` on a hexacore CPU with hyper threading.
 
 
 ## Installation
