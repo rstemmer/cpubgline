@@ -24,7 +24,7 @@
 #include <string.h>
 #include <errno.h>
 
-#define VERSION "1.1.0"
+#define VERSION "1.1.1"
 
 // Constant values
 #ifndef STATPATH
@@ -35,13 +35,13 @@
 #endif
 
 // ERROR-Codes
-#define RETVAL_OK                     0  // 0 if no error occured
+#define RETVAL_OK                     0  // 0 if no error occurred
 #define RETVAL_INVALIDARGUMENTS      -1  // invalid arguments
 #define RETVAL_CANNOTOPEN            -2  // cannot open stats-file
 #define RETVAL_UNEXPECTEDCONTENT     -3  // unexpected file content
 #define RETVAL_UNEXPECTEDCPUCOUNT    -4  // number of CPUs does not match with the expected one
 
-// Structs
+// CPU status structure
 typedef struct
 {
     unsigned long long user;
@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
     if(retval != RETVAL_OK)
         return EXIT_FAILURE;
 
-    // Save current statsitics
+    // Save current statistics
     retval = SaveCurrentState(prevstatsfile, currstats, numofcores);
     if(retval != RETVAL_OK)
         return EXIT_FAILURE;
