@@ -1,0 +1,7 @@
+2022-08-26 - 1.1.1
+ - Look at online CPUs, not at configured amount of CPUs that may be online
+ - Print an error message when there are less CPUs found that expected
+
+2017-08-17 - 1.1.0
+ - Initial Release
+
